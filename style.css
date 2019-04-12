@@ -142,6 +142,7 @@ video {
     padding: 4px 16px;
     margin: 0 10px;
     transition: 250ms all;
+    border-radius: 4px;
 }
 
 .explore ul li a:hover {
@@ -153,8 +154,26 @@ video {
     margin: 0 auto;
     margin-top: 40px;
 }
+
+.event {
+    position: relative;
+}
+
+.see-all {
+    text-decoration: none;
+    color: #00a2c7;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 .event h2, .event h3 {
     margin: 0;
+}
+
+.event h2 {
+    font-size: 20px;
 }
 
 .event-item {
@@ -232,4 +251,167 @@ video {
 
 .attend a:hover {
     background-color: #008dae;
+}
+
+.group {
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.group h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.group span {
+    margin: 0;
+}
+
+.group-item {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.group h3 {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.group .content {
+    padding: 20px 20px;
+}
+
+.group .content h2 {
+    font-size: 20px;
+}
+
+.group .content p {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.group .content span {
+    color: rgba(46, 62, 72, 0.6);
+    font-size: 14px;
+}
+
+.group-item .item {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 0 2px 0 rgba(46,62,72,.12), 0 2px 4px 0 rgba(46,62,72,.12);
+    transition: 250ms all;
+}
+
+.group-item .item:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 0 4px 0 rgba(46,62,72,.12), 0 4px 12px 0 rgba(46,62,72,.12);
+}
+
+.group-item .item:nth-child(2) {
+    margin: 0 20px;
+}
+
+.group-item .item:nth-child(3) {
+    margin-right: 20px;
+}
+
+.group-item .item .img {
+    width: auto;
+    background-image: url("https://secure.meetupstatic.com/photos/event/1/9/5/2/600_471306482.jpeg");
+    background-size: cover;
+    background-position: 50%;
+    height: 140px;
+}
+
+.categories h2{
+    font-size: 20px;
+}
+
+.categories h2, .categories span, .categories h3 {
+    margin: 0;
+}
+
+.categories-item {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+}
+
+.categories-item .item .img {
+    width: auto;
+    height: 160px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.categories-item .item h3 {
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+.how-work {
+    margin-top: 30px;
+    background-color: #0f1721;
+    padding-bottom: 60px;
+}
+
+.how-work h1 {
+    text-align: center;
+    padding-top: 60px;
+    margin: 0;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.how-work-item {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.how-work-item .item {
+    display: flex;
+}
+
+.how-work-item .item .icon i {
+    color: #00a2c7;
+    font-size: 65px;
+}
+
+.how-work-item .item .content {
+    padding-left: 20px;
+}
+
+.how-work-item .item .content h2 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.how-work-item .item .content p {
+    margin: 0;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.how-work-item .item .content a {
+    text-decoration: none;
+    color: #00a2c7;
+}
+
+.how-work-item .item .content a i {
+    padding-left: 20px;
 }
